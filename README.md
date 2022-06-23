@@ -12,7 +12,7 @@ Upon graduating from Thinkful, I decided to update my portfolio. I wanted to rec
 
 ![Project Gallery](https://i.imgur.com/BEYa5NT.png)
 
-![Image Gallery](https://i.imgur.com/PAqVjPR.png)
+![Image Gallery](https://i.imgur.com/oAuQSDY.png)
 
 ## Built With
 
