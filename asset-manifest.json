@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Front-End-Portfolio/static/css/main.b1ca2703.css",
+    "main.js": "/Front-End-Portfolio/static/js/main.5d7ad30f.js",
+    "static/media/Amiri-Regular.ttf": "/Front-End-Portfolio/static/media/Amiri-Regular.fbc5807f36683184655a.ttf",
+    "static/media/CinzelDecorative-Regular.ttf": "/Front-End-Portfolio/static/media/CinzelDecorative-Regular.25f648d1f13b6b98a5c8.ttf",
+    "index.html": "/Front-End-Portfolio/index.html",
+    "main.b1ca2703.css.map": "/Front-End-Portfolio/static/css/main.b1ca2703.css.map",
+    "main.5d7ad30f.js.map": "/Front-End-Portfolio/static/js/main.5d7ad30f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b1ca2703.css",
+    "static/js/main.5d7ad30f.js"
+  ]
+}
