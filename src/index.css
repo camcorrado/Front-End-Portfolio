@@ -1,13 +1,382 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@font-face {
+  font-family: "Cinzel Decorative";
+  src: url(https://fonts.gstatic.com/s/cinzeldecorative/v8/daaCSScvJGqLYhG8nNt8KPPswUAPni7TTMxpazyD.woff2)
+    format("woff2");
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@font-face {
+  font-family: "Amiri";
+  src: url(https://fonts.gstatic.com/s/amiri/v14/J7aRnpd8CGxBHpUutLMS7JNK.woff2)
+    format("woff2");
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Amiri-Regular", serif;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  min-width: 320px;
+}
+
+body {
+  background-color: black;
+  background-image: linear-gradient(#090029, #000);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  overflow: scroll;
+}
+
+nav {
+  padding: 10px 20px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.name {
+  display: flex;
+}
+
+h1,
+h1 > span {
+  color: #fff694;
+  font-family: "Cinzel Decorative", serif;
+  font-size: clamp(18px, 3vw, 28px);
+  font-weight: 200;
+  text-align: center;
+}
+
+h1 > span {
+  font-size: clamp(22px, 6vw, 42px);
+}
+
+h1:first-letter {
+  font-size: clamp(22px, 6vw, 42px);
+}
+
+.firstName {
+  margin-right: 5px;
+}
+
+h3 {
+  display: inline-block;
+  font-family: "Cinzel Decorative", serif;
+  font-size: clamp(18px, 3vw, 22px);
+  font-weight: 200;
+}
+
+h3:first-letter {
+  font-size: clamp(16px, 6vw, 28px);
+}
+
+h4 {
+  color: rgb(191, 231, 255);
+  font-size: clamp(12px, 3vw, 20px);
+  text-align: center;
+  width: 100%;
+  font-style: italic;
+  line-height: 1.2em;
+}
+
+.buttons {
+  display: flex;
+}
+
+.navLinks {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.navLinks > li {
+  display: flex;
+  list-style: none;
+  margin: 0px 5px;
+}
+
+a {
+  display: flex;
+  margin: auto;
+  color: white;
+  border: none;
+  background: none;
+}
+
+.faIcon {
+  font-size: clamp(16px, 3vw, 28px);
+}
+
+a:hover {
+  color: dodgerblue;
+}
+
+nav,
+.hero,
+.projectGallery,
+.imageGallery {
+  border-image: linear-gradient(
+      90deg,
+      rgba(255, 0, 0, 0),
+      #00cfff,
+      rgba(255, 0, 0, 0)
+    )
+    0 0 1 0;
+  border-style: solid;
+  border-width: 1px;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  padding-top: 20px;
+  height: 92vh;
+}
+
+.headShotContainer {
+  order: 2;
+  padding: 0px;
+  min-width: 50%;
+  max-width: 50%;
+  margin: 0px 0px 20px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.mainHeadShot {
+  margin-top: 10px;
+  border-radius: 100%;
+  width: 100%;
+  max-width: 300px;
+}
+
+.greeting {
+  order: 1;
+  text-align: center;
+  margin: 0px 20px;
+}
+
+.bio {
+  order: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  text-align: left;
+  padding: 0px 20px;
+}
+
+.bio > p {
+  text-indent: 20px;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: clamp(16px, 3.5vw, 18px);
+  color: white;
+  line-height: 1.5em;
+}
+
+span {
+  font-weight: bold;
+}
+
+span > a {
+  display: inline;
+}
+
+.projectGallery,
+.imageGallery {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 20px;
+}
+
+.projectGallery {
+  width: 100%;
+}
+
+.projectsContainer,
+.imagesContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto;
+  max-width: 100%;
+}
+
+.imagesContainer {
+  margin: auto 20px;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.imagesContainer::-webkit-scrollbar {
+  display: none;
+}
+
+.project,
+.image {
+  list-style: none;
+  margin: 10px 20px;
+}
+
+.projectCard,
+.imageCard {
+  position: relative;
+}
+
+.projectCard {
+  max-width: 600px;
+}
+
+.projectImage {
+  max-width: 100%;
+}
+
+.imageActual {
+  max-width: 300px;
+}
+
+.projectDetails,
+.imageDetails {
+  opacity: 0;
+  text-align: center;
+  background-color: rgb(0, 0, 0, 0.8);
+  position: absolute;
+  top: 0px;
+  transition: 0.5s;
+  height: 100%;
+  width: 100%;
+  padding: 20px;
+}
+
+.projectDetails:hover,
+.imageDetails:hover {
+  opacity: 1;
+}
+
+.projectDetails {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.projectDetails > p {
+  font-size: clamp(12px, 3.5vw, 18px);
+}
+
+.projectLinks {
+  display: flex;
+  justify-content: center;
+}
+
+.projectLinks > a {
+  margin: 0px;
+  padding: 5px;
+  font-size: clamp(12px, 3.5vw, 18px);
+  line-height: 1.2em;
+}
+
+.imagesContainer {
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  max-height: 300px;
+}
+
+.imageCard {
+  height: 300px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.imageActual {
+  text-align: center;
+}
+
+.imageDetails {
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer {
+  padding: 10px 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+@media (min-width: 700px) {
+  nav {
+    padding: 10px 20px;
+  }
+
+  .faIcons {
+    font-size: 25px;
+  }
+
+  .hero {
+    justify-content: center;
+  }
+
+  h4 {
+    font-size: clamp(16px, 3vw, 20px);
+  }
+
+  .projectDetails > p {
+    font-size: clamp(16px, 3.5vw, 18px);
+  }
+}
+
+@media (min-width: 1000px) and (orientation: landscape) {
+  .hero {
+    display: block;
+    width: 80%;
+    margin: auto;
+    padding-top: 150px;
+    height: 90vh;
+  }
+
+  .headShotContainer {
+    float: left;
+    min-width: 0px;
+    max-width: 400px;
+    height: 100%;
+    margin: 0px 50px 0px 0px;
+  }
+
+  .mainHeadShot {
+    max-width: 400px;
+    margin-top: 0px;
+  }
+
+  .greeting {
+    width: 100%;
+    margin: 0px;
+    margin-bottom: 20px;
+  }
+
+  .bio {
+    display: block;
+    width: 100%;
+    margin: 0px;
+  }
+
+  .projectCard {
+    max-width: 600px;
+  }
 }
