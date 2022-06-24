@@ -40,9 +40,8 @@ export default class Hero extends Component {
           </p>
           <p>
             When I'm not coding, I'm often found gardening with my cat Catkeisha
-            in our rooftop garden, kickin' butts in online PvP video games,
-            searching for vintage Halloween decor, or marching the streets of
-            major (&amp; minor) cities in a huuuuuuuge LGBTQ marching band!
+            in our rooftop garden, kickin' butts in online PvP video games, or
+            searching for vintage Halloween decor.
           </p>
         </section>
       </section>
