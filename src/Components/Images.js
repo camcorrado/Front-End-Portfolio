@@ -136,8 +136,7 @@ const images = [
   },
   {
     image: "https://i.imgur.com/fXMLTPL.jpg",
-    alt:
-      "Miranda Sings, Avatar Aang, Demonic High Priestess Halloween costumes",
+    alt: "Miranda Sings, Avatar Aang, Demonic High Priestess Halloween costumes",
     description: "Miranda Sings, Avatar Aang, Demonic High Priestess",
   },
   {
@@ -246,6 +245,17 @@ const images = [
     image: "https://i.imgur.com/XnZopln.png",
     alt: "A Polaroid of Cam and friends",
     description: "A week at Fire Island Pines",
+  },
+  {
+    image: "https://i.imgur.com/IpZOYxZ.png",
+    alt: "Ghostface chasing Casey Becker",
+    description:
+      "Halloween costumes based on the opening of Scream! I'm dressed as Ghostface, costume made from scratch.",
+  },
+  {
+    image: "https://i.imgur.com/YH7OhI7.png",
+    alt: "Cam at the beach with Nicky",
+    description: "Beach Babes",
   },
 ];
 

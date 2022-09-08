@@ -1,5 +1,15 @@
 const projects = [
   {
+    name: "Memory Game",
+    image: "https://i.imgur.com/N7sszKn.png",
+    alt: "Memory Game Screenshot",
+    description: `A card matching memory game to showcase my skill set in vanilla HTML, CSS, & JavaScript. This app provides difficulty options that switch up the card styles as well as feedback for correct and incorrect guesses.`,
+    mediums: "HTML, CSS, JavaScript",
+    link: "https://camcorrado.github.io/Memory-Game/",
+    repoClient: "https://github.com/camcorrado/Memory-Game",
+    repoServer: null,
+  },
+  {
     name: "UI Challenges",
     image: "https://i.imgur.com/XHjF6yn.jpg",
     alt: "UI Challenges Screenshot",

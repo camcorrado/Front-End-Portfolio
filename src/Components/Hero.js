@@ -16,7 +16,7 @@ export default class Hero extends Component {
             Hiya, <span>I</span>'m <span>C</span>ameron
           </h1>
           <p>
-            a <span>Front-End Developer</span> with a background in{" "}
+            a <span>Front-End Developer</span> with a background in
             <span>New Media</span>.
           </p>
         </section>
