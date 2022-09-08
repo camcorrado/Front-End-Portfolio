@@ -1,7 +1,7 @@
 const projects = [
   {
     name: "Memory Game",
-    image: "https://i.imgur.com/3I6RyiP.png",
+    image: "https://i.imgur.com/ZKrfqb3.png",
     alt: "Memory Game Screenshot",
     description: `A card matching memory game to showcase my skill set in vanilla HTML, CSS, & JavaScript. This app provides difficulty options that switch up the card styles as well as feedback for correct and incorrect guesses.`,
     mediums: "HTML, CSS, JavaScript",
