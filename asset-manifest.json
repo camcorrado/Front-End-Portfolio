@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/static/css/main.b1ca2703.css",
-    "main.js": "/static/js/main.27542ce2.js",
+    "main.js": "/static/js/main.cca4ebca.js",
     "static/media/Amiri-Regular.ttf": "/static/media/Amiri-Regular.fbc5807f36683184655a.ttf",
     "static/media/CinzelDecorative-Regular.ttf": "/static/media/CinzelDecorative-Regular.25f648d1f13b6b98a5c8.ttf",
     "index.html": "/index.html",
     "main.b1ca2703.css.map": "/static/css/main.b1ca2703.css.map",
-    "main.27542ce2.js.map": "/static/js/main.27542ce2.js.map"
+    "main.cca4ebca.js.map": "/static/js/main.cca4ebca.js.map"
   },
   "entrypoints": [
     "static/css/main.b1ca2703.css",
-    "static/js/main.27542ce2.js"
+    "static/js/main.cca4ebca.js"
   ]
 }
