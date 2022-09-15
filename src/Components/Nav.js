@@ -14,7 +14,7 @@ export default class Nav extends Component {
         <section className="buttons">
           <ul className="navLinks">
             <li className="gmail">
-              <a href="mailto:camcorrado@gmail.com">
+              <a href="mailto:camcorrado@gmail.com" aria-label="send email">
                 <FontAwesomeIcon icon={faEnvelope} className="faIcon" />
               </a>
             </li>
@@ -23,6 +23,7 @@ export default class Nav extends Component {
                 href="https://github.com/camcorrado"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="github profile"
               >
                 <FontAwesomeIcon icon={faGithub} className="faIcon" />
               </a>
@@ -33,6 +34,7 @@ export default class Nav extends Component {
                 href="https://camcorradoportfolio.s3.amazonaws.com/Cameron+Corrado's+Resume.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="view resume"
               >
                 <FontAwesomeIcon icon={faGraduationCap} className="faIcon" />
               </a>

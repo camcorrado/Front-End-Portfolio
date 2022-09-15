@@ -8,11 +8,13 @@ export default class ProjectGallery extends Component {
       <section className="projectGallery">
         <h1>Projects</h1>
         <section className="projectsContainer">
-          {Projects.map((project) => (
-            <li key={project.name} className="project">
-              <ProjectCard project={project} />
-            </li>
-          ))}
+          <ul className="projectsContainerList">
+            {Projects.map((project) => (
+              <li key={project.name} className="project">
+                <ProjectCard project={project} />
+              </li>
+            ))}
+          </ul>
         </section>
       </section>
     );

@@ -31,13 +31,15 @@ export default class ImageGallery extends Component {
           Get to <span>K</span>now <span>M</span>e
         </h1>
         <section className="imagesContainer">
-          {this.state.images
-            .map((image) => (
-              <li key={image.alt} className="image">
-                <ImageCard image={image} />
-              </li>
-            ))
-            .sort()}
+          <ul className="imagesContainerList">
+            {this.state.images
+              .map((image) => (
+                <li key={image.alt} className="image">
+                  <ImageCard image={image} />
+                </li>
+              ))
+              .sort()}
+          </ul>
         </section>
       </section>
     );

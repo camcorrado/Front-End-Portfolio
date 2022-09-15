@@ -63,18 +63,18 @@ h1:first-letter {
   margin-right: 5px;
 }
 
-h3 {
+.projectDetails h1 {
   display: inline-block;
   font-family: "Cinzel Decorative", serif;
   font-size: clamp(18px, 3vw, 22px);
   font-weight: 200;
 }
 
-h3:first-letter {
+.projectDetails h1:first-letter {
   font-size: clamp(16px, 6vw, 28px);
 }
 
-h4 {
+.projectDetails h2 {
   color: rgb(191, 231, 255);
   font-size: clamp(12px, 3vw, 20px);
   text-align: center;
@@ -95,7 +95,7 @@ h4 {
 .navLinks > li {
   display: flex;
   list-style: none;
-  margin: 0px 5px;
+  margin: 0px 10px;
 }
 
 a {
@@ -204,8 +204,7 @@ span > a {
   width: 100%;
 }
 
-.projectsContainer,
-.imagesContainer {
+.projectsContainerList {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -213,13 +212,16 @@ span > a {
   max-width: 100%;
 }
 
-.imagesContainer {
-  margin: auto 20px;
-  -ms-overflow-style: none;
-  scrollbar-width: none;
+.imagesContainerList {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  max-height: 300px;
 }
 
-.imagesContainer::-webkit-scrollbar {
+.imagesContainerList::-webkit-scrollbar {
   display: none;
 }
 
@@ -285,14 +287,6 @@ span > a {
   padding: 5px;
   font-size: clamp(12px, 3.5vw, 18px);
   line-height: 1.2em;
-}
-
-.imagesContainer {
-  flex-wrap: nowrap;
-  justify-content: flex-start;
-  overflow-x: scroll;
-  overflow-y: hidden;
-  max-height: 300px;
 }
 
 .imageCard {

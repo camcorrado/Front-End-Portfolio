@@ -16,9 +16,9 @@ export default class ProjectCard extends Component {
       <section className="projectCard">
         <img src={image} alt={alt} className="projectImage" />
         <div className="projectDetails">
-          <h3>{name}</h3>
+          <h1>{name}</h1>
           <p>{description}</p>
-          <h4>{mediums}</h4>
+          <h2>{mediums}</h2>
           <div className="projectLinks">
             <a href={link} target="_blank" rel="noopener noreferrer">
               LIVE
