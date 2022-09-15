@@ -107,7 +107,7 @@ a {
 }
 
 .faIcon {
-  font-size: clamp(16px, 3vw, 28px);
+  font-size: clamp(20px, 3vw, 28px);
 }
 
 a:hover {
@@ -135,7 +135,7 @@ nav,
   justify-content: flex-start;
   align-items: center;
   text-align: center;
-  padding-top: 20px;
+  padding-top: 10px;
   height: 92vh;
 }
 
@@ -169,13 +169,15 @@ nav,
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 20px;
   text-align: left;
   padding: 0px 20px;
 }
 
 .bio > p {
   text-indent: 20px;
+}
+
+.bio p:first-child {
   margin-bottom: 20px;
 }
 
@@ -197,7 +199,11 @@ span > a {
 .imageGallery {
   display: flex;
   flex-direction: column;
-  padding-bottom: 20px;
+  padding-top: 10px;
+}
+
+.imageGallery {
+  padding-bottom: 10px;
 }
 
 .projectGallery {
@@ -245,7 +251,7 @@ span > a {
 }
 
 .imageActual {
-  max-width: 300px;
+  height: 225px;
 }
 
 .projectDetails,
@@ -290,14 +296,10 @@ span > a {
 }
 
 .imageCard {
-  height: 300px;
+  height: 225px;
   display: flex;
   align-items: center;
   overflow: hidden;
-}
-
-.imageActual {
-  text-align: center;
 }
 
 .imageDetails {
